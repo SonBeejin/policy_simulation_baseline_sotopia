@@ -2,12 +2,12 @@
 Sotopia 스타일 다중 에이전트 상호작용을 활용한 BK21 정책 시뮬레이션.
 
 프로젝트 루트에서 실행:
-    python sotopia/policy_simulation_sotopia_aisg2_bjin.py
+    python sotopia/policy_simulation_sotopia_aisg2.py
 =========================================================================
 cd "C:\Users\BEEJIN\Desktop\비진이\HCCL\정책연구"
 $env:PYTHONUTF8="1"
 $env:PARALLEL_RUNS="50"
-.\.venv\Scripts\python.exe sotopia/policy_simulation_sotopia_aisg2_bjin.py
+.\.venv\Scripts\python.exe sotopia/policy_simulation_sotopia_aisg2.py
 =========================================================================
 출력 파일:
     sotopia_simulation_results.json
@@ -64,7 +64,7 @@ BASE_DIR = SCRIPT_DIR.parent                       # 프로젝트_루트
 PERSONAS_PATH = BASE_DIR / "simulation_personas_100e.json"
 POLICY_PATH = BASE_DIR / "input" / "AISG.txt"
 RESULT_DIR = BASE_DIR / "sotopia_result"
-RUN_OUTPUT_DIR = RESULT_DIR / "policy_simulation_sotopia_aisg2_bjin_runs"
+RUN_OUTPUT_DIR = RESULT_DIR / "policy_simulation_sotopia_aisg2_runs"
 OUTPUT_PATH = RUN_OUTPUT_DIR / "sotopia_simulation_aisg2_results_all_runs.json"
 INTERACTION_LOG_PATH = (
     RUN_OUTPUT_DIR / "sotopia_simulation_aisg2_interaction_log_all_runs.json"
